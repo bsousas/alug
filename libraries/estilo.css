@@ -1,0 +1,125 @@
+body{
+	margin: 0; padding: 0;
+}
+header{
+	width: 100%; float: left;
+}
+main{
+	width: 100%; float: left;
+}
+footer{
+	width: 100%; float: left;
+}
+ul{
+	margin: 0; padding: 0; list-style: none;
+}
+nav{
+	float: left; width: 100%; background: #4682B4; font-weight: bold; font-family: "Roboto Slab", Open Sans, sans-serif; color: #FFFFFF;
+}
+	nav li{
+		float: left; 
+	}
+
+		nav li a{
+			color: #FFFFFF; text-decoration: none; 
+		}
+
+.ind-logo{position: absolute;width: 25%; left: 0; top: 0; text-align: center; z-index: 2;}
+
+.ind-slid{float: left; width: 105; z-index: 1; }
+	.ind-slid img {width: 100%; position: absolute; }
+
+.ind-anuncio{float: left; margin: 40px 2.5px 20px 2.5%; background:#4682B4; font-family: Roboto Slab, sans-serif; font-size: 16px; }
+
+
+
+
+
+
+/*smartphone*/
+@media only screen and (max-width: 480px){
+nav{height: 50px; padding-left: 25%;}
+	nav li{ width: 100%; display: none; background: #4682B4; height: 30; padding-top: 10px; padding-bottom: 10px;}
+	nav li: first-child{margin-top: 1px;}
+
+	.ind-botao{position: absolute; width: 65%; top: 5px; right: 0px; cursor: pointer; padding-right: 10%; text-align: right;}
+	
+	.ind-logo {position: absolute; width: 25%; left: 0px; top: 0; text-align: center;}
+	
+	.ind-slid{height: 150px;}
+		.ind-slid img {max-height: 200px;}
+	.ind-anuncio{width: 95%; height: 200px; margin: 10px 2.5% 20px 2.5% }
+
+
+	
+}	
+
+
+
+
+
+
+/*tablet*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+nav{height: 80px; padding-left: 25%;}
+	nav li {width:100%; display: none;}
+	.ind-botao{position: absolute; width: 65%; top: 9px; right: 0px; cursor: pointer; padding-right: 10%; text-align: right;}
+	
+	.ind-logo {position: absolute; width: 25%; left: 0px; top: 0; text-align: center;}
+	
+	.ind-slid{height: 200px;}
+		.ind-slid img {max-height: 200px;}
+	
+	.ind-anuncio{width: 45%;  height: 200px; margin: 20px 2.5% 20px 2.5%}
+
+
+
+
+
+}
+
+
+/*desktop*/
+@media only screen and (min-width: 769px){
+nav{height: 60px; padding-left: 25%; padding-top: 15px;}
+	nav li{ width:15%; margin-top: 10px; text-align: center;}
+	
+	nav li:hover{border-top: 7px solid #FFFFFF; transition: all 0.5s ease; 
+		-webkit-transition: all 0.5s ease; 
+		-o-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;}
+
+	.ind-botao{display: none;}
+	
+	.ind-logo {position: absolute; width: 15%; left: 0px; top: 0; text-align: center;}
+		.ind-logo img {max-width: 100%;}
+	
+	.ind-slid{height: 450px;}
+		.ind-slid img {max-height: 450px;}	
+	
+	.ind-anuncio{width: 20%;  height: 300px;  margin: 40px 2.5% 100px 2.5%;}
+	
+	.ind-anuncio-titulo{float: left; width: 100%; padding: 10px 0; text-align: center; color: #FFF; background: #4682B4; font-weight: bold;}
+	
+	.ind-anuncio-imagem{float: left; width: 100%;}
+		.ind-anuncio-imagem img {width: 100%;} 
+		.ind-anuncio-texto{float: left; width: 100%; padding: 10px 0; text-align: center; line-height: 25px;}
+
+	.rodape{float: left; width: 100%; background: #4682B4; padding: 40px; border-top: 10px solid #DCDCDC;}
+		.rodape-texto{float: left; margin-left: 5% width: 60%; padding: 10px 0;color: #FFF;font-family:"Roboto Slab", Open Sans, sans-serif; font-weight: bold;}
+		.rodape-imagem{float: left; margin-right: 5%; width: 30%;  text-align center}
+
+
+
+	.ind-banerCadastro{ }
+
+	.Texto {float: left; width: 100%; text-align: justify; line-height: 35px; margin-top: 100px; font-family: "Roboto Slab", Open Sans, sans-serif; font-weight: bold; font-size: 20px;}
+
+	.Formulario{ float: left; width: 75%; margin: 20px 0; }
+		.Formulario input[type=text],[type=email], [type=tel]{width: 70%; height: 40px; font-size: 18px; color: #444;}
+		.Formulario input[type=submit]{width: 35%; height: 60px; cursor: pointer; background:#4682B4; color: #FFF; font-weight: bold; font-size: 22px; font-family:"Roboto Slab", Open Sans, sans-serif;  }
+
+
+
+}
+
